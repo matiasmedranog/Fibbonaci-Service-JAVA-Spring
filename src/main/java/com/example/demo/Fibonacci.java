@@ -22,7 +22,7 @@ public class Fibonacci {
 	        return 0;
 	    }
 	    else{ 
-	        System.out.println("Debes ingresar un tamaño mayor o igual a 1");
+	        //System.out.println("Debes ingresar un tamaño mayor o igual a 1");
 	        return -1; 
 	    }
 	}
