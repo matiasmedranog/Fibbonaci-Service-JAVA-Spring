@@ -1,5 +1,5 @@
-# ServicioHTTP
-JAVA 8 / SPRING (STS) / MAVEN
+# Fibbonaci Service JAVA Spring
+JAVA 8 / SPRING FRAMEWORK / MAVEN
 
 Se debe levantar la app en el puerto 8080, esto puede hacerse desde STS (SPRING) -> Click derecho sobre el proyecto -> Run as -> Java Aplication
 
