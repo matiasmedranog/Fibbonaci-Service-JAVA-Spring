@@ -1,4 +1,5 @@
 Manifest-Version: 1.0
 Created-By: Matias Medrano G
-Main-Class: HelloWorld
+Class-Path: target/ServicioHTTP-0.0.1-SNAPSHOT.jar 
+Main-Class: com.example.demo.ServicioHttpApplication
 
