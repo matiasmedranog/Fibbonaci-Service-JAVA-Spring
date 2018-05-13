@@ -1,15 +1,28 @@
 # Fibbonaci Service JAVA Spring
-JAVA 8 / SPRING FRAMEWORK / MAVEN / DOCKER
+Rest Service - Java - Fibonacci serie
 
-Se debe levantar la app en el puerto 8080, esto puede hacerse desde STS (SPRING) -> Click derecho sobre el proyecto -> Run as -> Java Aplication
+----------------------------------------
 
-Una vez ejecutada, vamos a la ruta siguiente y se mostrará el valor n y n-1 (variable llamada n1) de la serie fibonacci para el valor por defecto 10 (en orden Fibonacci equivale al número 34), mientras que n-1 toma valor 9 (21).
+Execute this as Java Application:
+```
+java -jar target/ServicioHTTP-0.0.1-SNAPSHOT.jar
+```
 
-URL APP
-http://localhost:8080/fibonacci
+----------------------------------------
 
-Para buscar un valor específico y su antecesor en la cadena fibonacci, utilizar el siguiente texto en la parte final de la URL y reemplazar el valor que se le asigna a la variable numero (?numero), EJ: en el siguiente caso es 7:
+Execute this as Docker Container: (With Docker Compose)
+- Run Container:
+```
+docker-compose up
+```
 
-http://localhost:8080/fibonacci?numero=7
+----------------------------------------
 
-Servicio retorna un JSON que le envía la clase Fibonacci como un objeto de esta misma, en donde sus variables (n & n1) son los respectivos terminos de N y N-1 en la sucesión de fibonacci.
+And send a test curl:
+```
+curl -X GET http://localhost:8080/\?numero\=10
+curl -X GET http://localhost:8080/\?numero\=11
+curl -X GET http://localhost:8080/\?numero\=12
+curl -X GET http://localhost:8080/\?numero\=13
+curl -X GET http://localhost:8080/\?numero\=[Nº]
+```
